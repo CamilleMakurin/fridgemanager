@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class DishController {
 
     @RequestMapping(method = RequestMethod.GET, path = "/{dishName}")
-    public ResponseEntity<String> createDish(@PathVariable(name = "dishName") String dishName){
-
+    public ResponseEntity<String> createDish(@PathVariable(name = "dishName") String dishName) {
+        return null;
     }
 
 
