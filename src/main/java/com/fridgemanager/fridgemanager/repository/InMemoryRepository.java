@@ -11,20 +11,24 @@ public abstract class InMemoryRepository<T extends StoredObject> {
 
     public abstract String getStorage();
 
-
-    public void addDish(T object) {
+    public void add(T object) {
         Map<String, T> storage = getStorage(getStorage());
         storage.put(object.getId(), object);
     }
 
-    public void updateDish(T object) {
+    public void update(T object) {
         Map<String, T> storage = getStorage(getStorage());
         storage.put(object.getId(), object);
     }
 
-    public void deleteDish(T object) {
+    public void delete(String objectId) {
         Map<String, T> storage = getStorage(getStorage());
-        storage.remove(object.getId());
+        storage.remove(objectId);
+    }
+
+    public T get(String objectId) {
+        Map<String, T> storage = getStorage(getStorage());
+        return storage.get(objectId);
     }
 
     private Map<String, T> getStorage(String storageName) {
