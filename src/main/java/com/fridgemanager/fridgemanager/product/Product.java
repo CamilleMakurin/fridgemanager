@@ -1,4 +1,4 @@
-package com.fridgemanager.fridgemanager.domain;
+package com.fridgemanager.fridgemanager.product;
 
 public class Product {
 }

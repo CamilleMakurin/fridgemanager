@@ -1,6 +1,6 @@
 package com.fridgemanager.fridgemanager.repository;
 
-import com.fridgemanager.fridgemanager.domain.StoredObject;
+import com.fridgemanager.fridgemanager.StoredObject;
 
 import java.util.HashMap;
 import java.util.Map;

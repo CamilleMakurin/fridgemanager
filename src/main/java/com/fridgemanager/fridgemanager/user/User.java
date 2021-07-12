@@ -1,7 +1,6 @@
 package com.fridgemanager.fridgemanager.user;
 
-import com.fridgemanager.fridgemanager.domain.Recipe;
-import com.fridgemanager.fridgemanager.domain.StoredObject;
+import com.fridgemanager.fridgemanager.StoredObject;
 import lombok.Data;
 
 @Data
