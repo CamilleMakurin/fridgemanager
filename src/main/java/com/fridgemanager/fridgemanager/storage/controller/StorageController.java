@@ -84,7 +84,7 @@ public class StorageController {
         }
     }
 
-    @RequestMapping(method = RequestMethod.PUT, path = "/{userName}/dish", consumes = "application/json")
+    @RequestMapping(method = RequestMethod.PUT, path = "/{userName}/product", consumes = "application/json")
     public ResponseEntity<String> updateProduct(@PathVariable(name = "userName") String userName,
                                                 @RequestBody StoredItemDto storedProductDto) {
         try {
