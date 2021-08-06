@@ -9,7 +9,7 @@ public class Dish implements StoredObject {
     private String id;
     private String name;
     private Recipe recipe;
-
+    private int validityDays;
 
     @Override
     public String getId() {

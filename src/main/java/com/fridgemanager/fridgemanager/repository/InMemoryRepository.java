@@ -31,7 +31,7 @@ public abstract class InMemoryRepository<T extends StoredObject> {
         return storage.get(objectId);
     }
 
-    private Map<String, T> getStorage(String storageName) {
+    public Map<String, T> getStorage(String storageName) {
         return storage.computeIfAbsent(storageName, k -> new HashMap<>());
     }
 }
